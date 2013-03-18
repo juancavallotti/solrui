@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apache Solr Search</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/twitter-bootstrap-2.2.2/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/searchengine.js"></script>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Solr Search</h1>
+        <p>This tool helps demoes the search over a Solr Server with JSONP, at the moment the server should be located on <a href="http://localhost:8080/solr">http://localhost:8080/solr</a> but this will be improved on the future.</p>
+        <div id="search" class="well container">
+            <h4>Search on Solr Instance</h4>
+            <form class="form-search" id="searchForm">
+                <div class="input-append">
+                    <input type="text" placeholder="Search the mulesoft documentation" id="searchField" class="span11 input-large search-query search-field" />
+                    <button type="submit" id="searchButton" class="btn">Search</button>
+                </div>
+            </form>
+        </div>
+        <div id="content">
+            
+        </div>
+    </body>
+</html>

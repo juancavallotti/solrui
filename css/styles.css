@@ -1,0 +1,17 @@
+#content {
+    margin-left: 24px;
+}
+
+p.resultUrl {
+    color: #339900;
+}
+
+p.resultHl {
+    color: #888;
+    font-style: italic;
+}
+
+p.resultHl em {
+    color: #777;
+    font-weight: bold;
+}
