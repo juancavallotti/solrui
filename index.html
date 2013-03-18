@@ -11,7 +11,7 @@
     </head>
     <body>
         <h1>Solr Search</h1>
-        <p>This tool helps demoes the search over a Solr Server with JSONP, at the moment the server should be located on <a href="http://localhost:8080/solr">http://localhost:8080/solr</a> but this will be improved on the future.</p>
+        <p>This tool helps demoes the search over a Solr Server with JSONP, please enter <a href="#settingsModal" role="button" data-toggle="modal">here</a> to configure your search..</p>
         <div id="search" class="well container">
             <h4>Search on Solr Instance</h4>
             <form class="form-search" id="searchForm">
@@ -23,6 +23,27 @@
         </div>
         <div id="content">
             
+        </div>
+        
+        
+        <!-- dialogs --->
+        <div id="settingsModal" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Search Configuration</h3>
+            </div>
+            <div class="modal-body">
+                <form id="settingsForm">
+                    <div>
+                        <label>Server URL:</label><input class="span3" type="text" id="solrServerField" placeholder="Enter the Solr server url" />
+                        <label>Search Handler:</label><input class="span3" type="text" id="solrSearchHandlerField" placeholder="Enter the desired search handler." />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class="btn" data-dismiss="modal">Close</a>
+                <a href="javascript:void(0)" id="updateSettingsBtn" class="btn btn-primary">Update</a>
+            </div>
         </div>
     </body>
 </html>
